@@ -2,7 +2,7 @@
 
 param (
   [string]$majorver = "5.4",
-  [string]$minorver = "5.4.9",
+  [string]$minorver = "5.4.10",
   [string]$zbx_var = "2",
   [string]$zbx_path = "C:\Program Files\Zabbix Agent"
 )
