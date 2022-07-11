@@ -10,6 +10,8 @@ $base_url = "https://cdn.zabbix.com/zabbix/binaries/stable/"
 $req_url_1 = $base_url + $majorver + "/" + $minorver +"/zabbix_agent-" + $minorver + "-windows-amd64-openssl.zip"
 $req_url_2 = $base_url + $majorver + "/" + $minorver +"/zabbix_agent" + $zbx_var + "-" + $minorver + "-windows-amd64-openssl-static.zip"
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls, [Net.SecurityProtocolType]::Tls11, [Net.SecurityProtocolType]::Tls12, [Net.SecurityProtocolType]::Ssl3
+[Net.ServicePointManager]::SecurityProtocol = "Tls, Tls11, Tls12, Ssl3"
 
 ### SERVICES
 ############################################################
